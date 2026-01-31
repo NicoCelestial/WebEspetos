@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boquerón Gourmet · Málaga a un solo click</title>
+  <meta name="description" content="Tienda online de productos gourmet malagueños. Aceites, vinos, embutidos, quesos y delicatesen con envío 24–48h." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#inicio" aria-label="Ir a inicio">
+        <!-- LOGO real -->
+        <img class="brand-logo" src="logo.png" alt="Logo Boquerón Gourmet" />
+
+        <div class="brand-text">
+          Boquerón Gourmet
+          <small>Málaga a un solo click</small>
+        </div>
+      </a>
+
+      <!-- Botón menú móvil -->
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+
+      <!-- Menú -->
+      <nav class="nav" id="mainNav" aria-label="Menú principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="cta">
+        <a class="btn" href="#productos">Ver productos</a>
+        <a class="btn primary" href="#contacto">Packs & suscripción</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-card hero-card--malaga">
+        <div class="hero-card__top">
+          <!-- Logo también en el hero (opcional, queda muy bien) -->
+          <img class="hero-logo" src="logo.png" alt="Logo Boquerón Gourmet" />
+          <div class="kicker">🌊 100% Málaga · Gourmet online</div>
+        </div>
+
+        <h1>Sabores malagueños auténticos, con envío rápido a toda España.</h1>
+        <p class="lead">
+          Boquerón Gourmet es una tienda online especializada en productos gourmet malagueños:
+          aceites, vinos, embutidos, quesos y delicatesen. Apostamos por productores locales,
+          denominaciones de origen y una experiencia de compra cuidada (producto + historia + maridaje).
+        </p>
+
+        <div class="pill-row">
+          <div class="pill">🚚 Envío 24–48 h</div>
+          <div class="pill">🎁 Packs temáticos y regalo</div>
+          <div class="pill">📦 Envío gratis desde 50 €</div>
+          <div class="pill">♻️ Embalaje ecológico</div>
+        </div>
+
+        <div class="pill-row" style="margin-top:12px">
+          <a class="btn primary" href="#productos">Descubrir catálogo</a>
+          <a class="btn" href="#sobre">Conoce la marca</a>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <strong>Especialización 100% malagueña</strong>
+          <span>Selección cuidada y auténtica (no somos una tienda generalista).</span>
+        </div>
+        <div class="stat">
+          <strong>Confianza y calidad</strong>
+          <span>Certificados de origen en productos con D.O. (vinos, aceitunas…) y política clara de devolución.</span>
+        </div>
+        <div class="stat">
+          <strong>Experiencia premium</strong>
+          <span>Cajas cuidadas, historias del productor y recomendaciones para disfrutar cada producto.</span>
+        </div>
+        <div class="stat">
+          <strong>Logística pensada para alimentación</strong>
+          <span>Preparación, protección y seguimiento del pedido, priorizando el estado del producto.</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Servicios -->
+  <section aria-label="Servicios">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Una experiencia gourmet completa</h2>
+          <p class="sub">
+            Queremos que la compra sea tan especial como el producto: rápida, segura, con trazabilidad
+            y cuidando cada detalle del envío.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-strip">
+        <div class="feature">
+          <h3>🚚 Envíos 24–48 h + gratis desde 50 €</h3>
+          <p>Entrega peninsular rápida y umbral de envío gratuito para premiar pedidos más completos.</p>
+        </div>
+        <div class="feature">
+          <h3>🛡️ Garantía si llega mal</h3>
+          <p>Devolución o reemplazo si el producto no llega en perfecto estado.</p>
+        </div>
+        <div class="feature">
+          <h3>♻️ Embalaje ecológico + seguro</h3>
+          <p>Cajas resistentes y protección pensada para que el producto llegue impecable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section id="productos" aria-label="Productos">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Productos</h2>
+          <p class="sub">
+            Destacamos algunos imprescindibles y, debajo, una selección por categorías: aceites, vinos,
+            embutidos, quesos y delicatesen.
+          </p>
+        </div>
+      </div>
+
+      <!-- Destacados (Carrusel) -->
+      <div class="carousel" aria-label="Carrusel de productos destacados">
+        <div class="carousel-top">
+          <div>
+            <strong class="carousel-title">Destacados</strong>
+            <div class="hint">4 productos “estrella” para portada</div>
+          </div>
+          <div class="carousel-controls">
+            <button class="btn" id="prevBtn" type="button" aria-label="Anterior">←</button>
+            <button class="btn primary" id="nextBtn" type="button" aria-label="Siguiente">→</button>
+          </div>
+        </div>
+
+        <div class="track" id="track">
+          <article class="slide" aria-label="Aceite Mudéjar Monda">
+            <div class="product-shot"></div>
+            <div>
+              <h3>Aceite Mudéjar (Monda · Sierra de las Nieves)</h3>
+              <p>
+                Una de nuestras selecciones más exclusivas: AOVE de producción limitada, procedente
+                de aceitunas milenarias (acebuche). Ideal para terminar platos, pan con aceite y regalos gourmet.
+              </p>
+              <div class="tags">
+                <span class="tag">AOVE premium</span>
+                <span class="tag">Edición limitada</span>
+                <span class="tag">Sabor intenso</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide" aria-label="Pajarete 1908">
+            <div class="product-shot"></div>
+            <div>
+              <h3>Pajarete 1908 · Antigua Casa de Guardia</h3>
+              <p>
+                Un clásico con historia: vino malagueño emblemático para maridar con quesos curados,
+                patés o dulces tradicionales. Perfecto para una experiencia “Málaga en casa”.
+              </p>
+              <div class="tags">
+                <span class="tag">D.O. Málaga</span>
+                <span class="tag">Maridaje</span>
+                <span class="tag">Tradición</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide" aria-label="Embutidos ibéricos">
+            <div class="product-shot"></div>
+            <div>
+              <h3>Embutidos ibéricos · La Dehesa de los Monteros</h3>
+              <p>
+                Selección ibérica gourmet (gama completa): piezas y embutidos pensados para una tabla
+                de categoría. Un imprescindible en cualquier pack regalo.
+              </p>
+              <div class="tags">
+                <span class="tag">Ibérico</span>
+                <span class="tag">Packs regalo</span>
+                <span class="tag">Calidad gourmet</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide" aria-label="Quesos artesanos">
+            <div class="product-shot"></div>
+            <div>
+              <h3>Quesos artesanos · Sierra Crestellina</h3>
+              <p>
+                Quesería familiar con historia: quesos con carácter, elaborados con mimo y producción limitada.
+                Un “top ventas” para amantes del queso.
+              </p>
+              <div class="tags">
+                <span class="tag">Artesanal</span>
+                <span class="tag">Producción limitada</span>
+                <span class="tag">Tabla gourmet</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Rejilla -->
+      <div class="grid" aria-label="Rejilla de productos">
+        <article class="card">
+          <div class="thumb"><span>Aceites</span></div>
+          <div class="body">
+            <h4>Olivarera San José Artesano (Mondrón)</h4>
+            <p>AOVE de cooperativa con tradición y acuerdos de suministro por cajas.</p>
+          </div>
+          <div class="meta">
+            <span class="chip">AOVE</span>
+            <span>Para diario premium</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><span>Aceites</span></div>
+          <div class="body">
+            <h4>Aceites de Ardales (Familia Bravo)</h4>
+            <p>Elaboración familiar, respeto por procesos y enfoque “solo lo que aporta la naturaleza”.</p>
+          </div>
+          <div class="meta">
+            <span class="chip">AOVE</span>
+            <span>Notas equilibradas</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><span>Vinos</span></div>
+          <div class="body">
+            <h4>Bodega F. Schatz (Serranía de Ronda)</h4>
+            <p>Vinos ecológicos-biodinámicos con microclima único y enfoque artesanal.</p>
+          </div>
+          <div class="meta">
+            <span class="chip">Ronda</span>
+            <span>Eco / biodinámico</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><span>Vinos</span></div>
+          <div class="body">
+            <h4>Bodegas Sedella (Axarquía)</h4>
+            <p>Terruño protagonista: pizarra, montaña y Mediterráneo en una combinación muy especial.</p>
+          </div>
+          <div class="meta">
+            <span class="chip">Axarquía</span>
+            <span>Autor</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><span>Embutidos</span></div>
+          <div class="body">
+            <h4>Tabla ibérica (selección)</h4>
+            <p>Jamón, lomo, chorizo, salchichón… la categoría estrella del gourmet para regalar o compartir.</p>
+          </div>
+          <div class="meta">
+            <span class="chip">Ibérico</span>
+            <span>Top demanda</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><span>Quesos</span></div>
+          <div class="body">
+            <h4>Quesos Montes de Málaga (AGAMMASUR)</h4>
+            <p>Cooperativa caprina con gran reconocimiento; quesos con matices del pastoreo.</p>
+          </div>
+          <div class="meta">
+            <span class="chip">Cabra</span>
+            <span>Explosión de sabor</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><span>Conservas</span></div>
+          <div class="body">
+            <h4>Conservas & semiconservas</h4>
+            <p>Anchoas, boquerones, sardinas… perfectas para tapas y packs gourmet.</p>
+          </div>
+          <div class="meta">
+            <span class="chip">Tapas</span>
+            <span>Formato ideal</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><span>Delicatesen</span></div>
+          <div class="body">
+            <h4>Dulces, mieles, almendras</h4>
+            <p>Para completar la experiencia: caprichos malagueños con historia y estética cuidada.</p>
+          </div>
+          <div class="meta">
+            <span class="chip">Regalo</span>
+            <span>Toque final</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><span>Packs</span></div>
+          <div class="body">
+            <h4>Packs temáticos & suscripción</h4>
+            <p>Cajas sorpresa mensuales y packs por temporada (Navidad, Semana Santa, etc.).</p>
+          </div>
+          <div class="meta">
+            <span class="chip">Suscripción</span>
+            <span>Experiencia continua</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="mini" style="margin-top:12px">
+        * Si quieres, te digo cómo poner fotos reales en cada producto con `<img>`.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sobre nosotros -->
+  <section id="sobre" aria-label="Sobre nosotros">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Sobre nosotros</h2>
+          <p class="sub">
+            Un proyecto que nace para llevar la gastronomía malagueña a cualquier rincón de España,
+            apoyando a pequeños productores locales y revalorizando la identidad de Málaga.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="panel">
+          <h3>Nuestra misión</h3>
+          <p>
+            En Boquerón Gourmet creemos que la gastronomía es cultura, tradición y experiencia.
+            Por eso no solo vendemos productos: contamos su historia, su origen y cómo disfrutarlos en casa.
+          </p>
+
+          <ul class="clean">
+            <li>Especialización exclusiva en producto malagueño.</li>
+            <li>Selección por calidad, autenticidad y trazabilidad.</li>
+            <li>Presentación cuidada: ideal para regalo y packs.</li>
+            <li>Envíos 24–48 h y política de satisfacción clara.</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>Empresa y ubicación</h3>
+          <p>
+            Denominación social: <strong>Boquerón Gourmet S.L.</strong><br/>
+            Operativa en Málaga, con foco logístico en el <strong>Polígono Guadalhorce</strong>,
+            ideal para almacenamiento y preparación de pedidos.
+          </p>
+
+          <ul class="clean">
+            <li><strong>Atención al cliente:</strong> L–V 9:00–18:00 · S 10:00–14:00</li>
+            <li><strong>Almacén / preparación:</strong> L–V 8:00–16:00</li>
+            <li><strong>Eslogan:</strong> “Málaga a un solo click”</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" aria-label="Contacto">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Contacto</h2>
+          <p class="sub">
+            ¿Quieres un pack regalo, una cesta para empresa o la suscripción mensual?
+            Escríbenos y lo preparamos a medida.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="panel">
+          <h3>Datos</h3>
+          <p class="mini">
+            <strong>Ubicación:</strong> Málaga (Polígono Guadalhorce)<br/>
+            <strong>Horario:</strong> L–V 9:00–18:00 · S 10:00–14:00<br/>
+            <strong>Envíos:</strong> 24–48 h · Gratis desde 50 €<br/>
+            <strong>Garantía:</strong> reemplazo/devolución si llega en mal estado
+          </p>
+
+          <hr class="hr" />
+
+          <p class="mini">
+            <strong>Email (cámbialo si tenéis otro):</strong> info@boquerongourmet.com<br/>
+            <strong>WhatsApp (placeholder):</strong> +34 600 000 000
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Escríbenos</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div>
+                <label for="name">Nombre</label>
+                <input id="name" name="name" placeholder="Tu nombre" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="tucorreo@email.com" required />
+              </div>
+            </div>
+
+            <div>
+              <label for="topic">Motivo</label>
+              <input id="topic" name="topic" placeholder="Packs regalo, empresa, suscripción, pedido..." />
+            </div>
+
+            <div>
+              <label for="msg">Mensaje</label>
+              <textarea id="msg" name="msg" placeholder="Cuéntanos qué te gustaría..." required></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Enviar mensaje</button>
+            <p class="mini" id="formStatus" style="display:none; margin:0"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="logo.png" alt="Logo Boquerón Gourmet" />
+        <div>
+          <strong>Boquerón Gourmet</strong><br />
+          <span class="mini">Boquerón Gourmet S.L. · Málaga</span>
+        </div>
+      </div>
+
+      <div class="mini">
+        © <span id="year"></span> · Diseño one-page (TFG) ·
+        <a href="#inicio" class="backtop">Volver arriba</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
